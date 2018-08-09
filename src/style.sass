@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=latin-ext')
+
+body
+    font: normal 20px/27px 'Roboto Condensed', sans-serif
+    background-color: darkgray
+*
+    box-sizing: border-box
+.game
+    max-width: 1200px
+    margin: 100px auto
+    -webkit-display: flex
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    .hidden
+        display: none
+    canvas
+        border: 3px solid #ffffff
+        max-width: 100%
+        height: auto
+footer
+    padding: 0 60px
+    text-align: center
+    font-size: 16px
+    max-width: 1200px
+    margin: 0 auto
+
+/* Media queries */
+
+/* For computers: */
+@media (max-width: 992px)
+    body
+        font-size: 19px
+    .game
+        width: 100%
+
+/* For tablets: */
+@media (max-width: 768px)
+    body
+        font-size: 18px
+    .game
+        -webkit-flex-direction: column
+        flex-direction: column
+        -webkit-align-items: center
+        align-items: center
+
+/* For smart phones: */
+@media (max-width: 480px)
+    body
+        font-size: 17px
+    footer
+        font-size: 14px
