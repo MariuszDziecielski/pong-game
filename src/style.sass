@@ -5,7 +5,7 @@ body
     background-color: darkgray
 *
     box-sizing: border-box
-.game
+#game
     max-width: 1200px
     margin: 100px auto
     -webkit-display: flex
@@ -17,8 +17,7 @@ body
         display: none
     canvas
         border: 3px solid #ffffff
-        max-width: 100%
-        height: auto
+        width: 100%
 footer
     padding: 0 60px
     text-align: center
@@ -32,14 +31,14 @@ footer
 @media (max-width: 992px)
     body
         font-size: 19px
-    .game
+    #game
         width: 100%
 
 /* For tablets: */
 @media (max-width: 768px)
     body
         font-size: 18px
-    .game
+    #game
         -webkit-flex-direction: column
         flex-direction: column
         -webkit-align-items: center
